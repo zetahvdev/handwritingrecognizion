@@ -99,4 +99,5 @@ def to_origin(event):
     post = event - [smallest_x, smallest_y]
     return np.where(post >= 0, post, 0)  
 
+print("Everything's working correctly")
 

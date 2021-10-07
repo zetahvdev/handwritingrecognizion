@@ -97,7 +97,5 @@ def to_origin(event):
     smallest_x = np.min(event.T[0][event.T[0] > 0])
     smallest_y = np.min(event.T[1][event.T[1] > 0])
     post = event - [smallest_x, smallest_y]
-    return np.where(post >= 0, post, 0)  
-
-print("Everything's working correctly")
+    return np.where(post >= 0, post, 0)
 
